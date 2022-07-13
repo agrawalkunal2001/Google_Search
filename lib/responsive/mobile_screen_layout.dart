@@ -69,29 +69,40 @@ class MobileScreenLayout extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.only(left: 5, right: 5),
+        padding: const EdgeInsets.only(left: 15, right: 15),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             SizedBox(
-              height: size.height * 0.20,
+              height: size.height * 0.01,
             ),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    children: const <Widget>[
-                      Search(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      TranslationButtons(),
-                    ],
-                  ),
-                  const MobileFooter(),
-                ],
-              ),
-            )
+            Column(
+              children: const <Widget>[
+                Search(),
+                SizedBox(
+                  height: 20,
+                ),
+                TranslationButtons(),
+              ],
+            ),
+            const MobileFooter(),
+            // Expanded(
+            //   child: Column(
+            //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //     children: <Widget>[
+            //       Column(
+            //         children: const <Widget>[
+            //           Search(),
+            //           SizedBox(
+            //             height: 20,
+            //           ),
+            //           TranslationButtons(),
+            //         ],
+            //       ),
+            //       const MobileFooter(),
+            //     ],
+            //   ),
+            // )
           ],
         ),
       ),

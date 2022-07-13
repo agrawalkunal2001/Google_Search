@@ -3,6 +3,7 @@ import 'package:google_search/colors.dart';
 import 'package:google_search/responsive/mobile_screen_layout.dart';
 import 'package:google_search/responsive/responsive_layout_screen.dart';
 import 'package:google_search/responsive/web_screen_layout.dart';
+import 'package:google_search/screens/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
